@@ -1,0 +1,39 @@
+# Fallback default for shared code (apps/, drivers/, lib/) that isn't under any
+# boards/<name>/ directory. clangd resolves one flag set per file, and shared
+# sources get built once per board, so there's no single "correct" board for
+# them — this default is arbitrary, not a preference for this board.
+#
+# Files under boards/<name>/ are NOT affected by this: each boards/<name>/
+# directory has its own .clangd that overrides this with that board's own
+# build/<name>/compile_commands.json, so board-specific files (system.c,
+# board.h, startup.s) always resolve against the correct board regardless of
+# this default.
+
+CompileFlags:
+  CompilationDatabase: build/stm32f407g-disc1
+  Add: [-Wall, -Wextra]
+
+Index:
+  Background: Build
+
+Diagnostics:
+  UnusedIncludes: Strict
+
+---
+
+If:
+  PathMatch: 
+    - drivers/rcc/src/rcc_n6.c
+    - drivers/i2c/src/i2c_n6.c
+    - apps/blinky/src/main.c
+    - apps/i2c_camera_test/src/main.c
+CompileFlags:
+  CompilationDatabase: build/stm32n6570-dk
+  Add: [-Wall, -Wextra]
+
+
+Index:
+  Background: Build
+
+Diagnostics:
+  UnusedIncludes: Strict

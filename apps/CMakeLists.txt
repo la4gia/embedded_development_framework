@@ -1,0 +1,8 @@
+add_subdirectory(blinky)
+add_subdirectory(n6_clock_test)
+if(TARGET driver_i2c)
+    add_subdirectory(i2c_camera_test)
+endif()
+add_subdirectory(traffic_light)
+add_subdirectory(reaction_game)
+add_subdirectory(simon_game)

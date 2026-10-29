@@ -1,0 +1,9 @@
+CompileFlags:
+  CompilationDatabase: ../../build/nucleo-c562re
+  Add: [-Wall, -Wextra]
+
+Index:
+  Background: Build
+
+Diagnostics:
+  UnusedIncludes: Strict

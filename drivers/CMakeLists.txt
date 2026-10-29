@@ -1,0 +1,5 @@
+add_subdirectory(rcc)
+add_subdirectory(exti)
+add_subdirectory(gpio)
+add_subdirectory(uart)
+add_subdirectory(i2c)

@@ -1,0 +1,9 @@
+CompileFlags:
+  CompilationDatabase: ../../build/stm32f407g-disc1
+  Add: [-Wall, -Wextra]
+
+Index:
+  Background: Build
+
+Diagnostics:
+  UnusedIncludes: Strict

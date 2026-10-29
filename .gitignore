@@ -1,0 +1,28 @@
+# Build output
+build/
+
+# External dependencies (fetched by scripts/fetch-deps.sh)
+external/*
+!external/.gitkeep
+
+# Object files
+*.o
+*.obj
+
+# Firmware binaries
+*.elf
+*.bin
+*.hex
+*.map
+
+# clangd index
+.cache/
+
+# Editor
+*.swp
+*.swo
+*~
+.DS_Store
+
+# IDE (keep .vscode tracked)
+*.code-workspace

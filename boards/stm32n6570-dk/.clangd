@@ -1,0 +1,9 @@
+CompileFlags:
+  CompilationDatabase: ../../build/stm32n6570-dk
+  Add: [-Wall, -Wextra]
+
+Index:
+  Background: Build
+
+Diagnostics:
+  UnusedIncludes: Strict

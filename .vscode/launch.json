@@ -1,0 +1,54 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Debug (STM32F407G-DISC1)",
+            "type": "cortex-debug",
+            "request": "launch",
+            "servertype": "openocd",
+            "cwd": "${workspaceFolder}",
+            "executable": "${workspaceFolder}/build/stm32f407g-disc1/apps/blinky/blinky",
+            "configFiles": [
+                "${workspaceFolder}/boards/stm32f407g-disc1/openocd.cfg"
+            ],
+            "svdFile": "${workspaceFolder}/external/svd/STM32F407.svd",
+            "device": "STM32F407VG",
+            "interface": "swd",
+            "runToEntryPoint": "main",
+            "gdbPath": "gdb-multiarch",
+            "objdumpPath": "arm-none-eabi-objdump"
+        },
+        {
+            "name": "Debug (STM32N6570-DK)",
+            "type": "cortex-debug",
+            "request": "launch",
+            "servertype": "openocd",
+            "cwd": "${workspaceFolder}",
+            "executable": "${workspaceFolder}/build/stm32n6570-dk/apps/blinky/blinky",
+            "configFiles": [
+                "${workspaceFolder}/boards/stm32n6570-dk/openocd.cfg"
+            ],
+            "device": "STM32N657xx",
+            "interface": "swd",
+            "runToEntryPoint": "main",
+            "gdbPath": "gdb-multiarch",
+            "objdumpPath": "arm-none-eabi-objdump"
+        },
+        {
+            "name": "Debug (NUCLEO-C562RE)",
+            "type": "cortex-debug",
+            "request": "launch",
+            "servertype": "openocd",
+            "cwd": "${workspaceFolder}",
+            "executable": "${workspaceFolder}/build/nucleo-c562re/apps/blinky/blinky",
+            "configFiles": [
+                "${workspaceFolder}/boards/nucleo-c562re/openocd.cfg"
+            ],
+            "device": "STM32C562RE",
+            "interface": "swd",
+            "runToEntryPoint": "main",
+            "gdbPath": "gdb-multiarch",
+            "objdumpPath": "arm-none-eabi-objdump"
+        }
+    ]
+}

@@ -1,0 +1,23 @@
+{
+    "telemetry.telemetryLevel": "off",
+    "telemetry.enableTelemetry": false,
+
+    "clangd.path": "clangd",
+    "clangd.arguments": [
+        "--background-index",
+        "--header-insertion=never"
+    ],
+
+    "C_Cpp.intelliSenseEngine": "disabled",
+
+    "cortex-debug.openocdPath": "openocd",
+    "cortex-debug.gdbPath": "gdb-multiarch",
+
+    "files.associations": {
+        "*.h": "c",
+        "*.ld": "plaintext"
+    },
+
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "llvm-vs-code-extensions.vscode-clangd"
+}
