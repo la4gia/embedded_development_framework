@@ -7,6 +7,8 @@ peripheral drivers that you link into per-application firmware.
 It is meant to be read. The drivers are short, commented, and talk to the
 registers directly, so you can use them as-is or as a reference for writing your own.
 
+### Moving to [bare-metal-embedded-lab](https://github.com/la4gia/bare-metal-embedded-lab)
+
 ## Contents
 
 - [Supported boards](#supported-boards)
